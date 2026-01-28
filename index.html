@@ -2,37 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Yasmine Quest 💊💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Dr. Yasmine Quest 💊</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <div id="intro" class="screen active">
-  <h2>😅</h2>
-  <p>
-    It’s the cringiest and the nerdiest thing I did in my life…<br>
-    you better feel special after this ❤️
-  </p>
-  <button onclick="startGame()">Start Quest</button>
+  <div class="und-box">
+    <p class="typewriter">* It’s the cringiest thing I’ve ever done...</p>
+    <p class="typewriter">* But you're worth the effort. ❤️</p>
+    <button onclick="startGame()">[ START ]</button>
+  </div>
 </div>
 
-<div id="game" class="screen">
-  <h3>Dr. Yasmine Quest 💊💖</h3>
-  <div id="character">👩‍⚕️</div>
-  <p id="levelText"></p>
-  <button id="doorBtn" onclick="openDoor()">Open Door 🚪</button>
+<div id="game-container" class="screen">
+  <canvas id="gameCanvas"></canvas>
+  <div class="controls">
+    <button class="ctrl-btn" id="up">▲</button>
+    <div class="mid-ctrl">
+      <button class="ctrl-btn" id="left">◀</button>
+      <button class="ctrl-btn" id="right">▶</button>
+    </div>
+    <button class="ctrl-btn" id="down">▼</button>
+  </div>
 </div>
 
 <div id="quiz" class="screen">
-  <h3 id="question"></h3>
-  <div id="answers"></div>
-</div>
-
-<div id="chest" class="screen">
-  <h2>💎 Treasure Found!</h2>
-  <p>Open it...</p>
-  <button onclick="openChest()">Open Chest 🧰</button>
+  <div class="und-box">
+    <p id="question"></p>
+    <div id="answers"></div>
+  </div>
 </div>
 
 <div id="videoScreen" class="screen">
