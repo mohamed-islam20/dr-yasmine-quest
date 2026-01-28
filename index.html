@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Dr. Yasmine Quest 💊</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="intro" class="screen active">
+  <div class="und-box">
+    <p class="typewriter">* It’s the cringiest thing I’ve ever done...</p>
+    <p class="typewriter">* But you're worth the effort. ❤️</p>
+    <button onclick="startGame()">[ START ]</button>
+  </div>
+</div>
+
+<div id="game-container" class="screen">
+  <canvas id="gameCanvas"></canvas>
+</div>
+
+<div id="quiz" class="screen">
+  <div class="und-box">
+    <p id="question"></p>
+    <div id="answers"></div>
+  </div>
+</div>
+
+<div id="letterScreen" class="screen">
+  <div class="und-box">
+    <p class="typewriter">* Hi, I'm Islam.</p>
+    <p class="typewriter">* I just wanted to wish you a happy birthday.</p>
+    <p class="typewriter">* Since I can't do it the simple way,</p>
+    <p class="typewriter">* I chose to make you this little game.</p>
+    <p class="typewriter">* I hope you like it. ❤️</p>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
